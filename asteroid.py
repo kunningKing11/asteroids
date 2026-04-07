@@ -5,6 +5,16 @@ from constants import LINE_WIDTH, ASTEROID_MIN_RADIUS
 from logger import log_event
 
 class Asteroid(CircleShape):
+    categories = [
+        "asteroid_small",
+        "asteroid_medium",
+        "asteroid_large",
+    ]
+    sizes = [
+        50,
+        100,
+    ]
+
     def __init__(self, x, y, radius):
         super().__init__(x, y, radius)
 
